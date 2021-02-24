@@ -16,7 +16,7 @@
         android:textAppearance="@android:style/TextAppearance.Holo.Large"
         app:layout_constraintStart_toEndOf="@+id/img_account"
         app:layout_constraintTop_toTopOf="parent"
-        tools:text="ACCOUNT NAME" />
+        tools:text="ИМЕ НА СМЕТКА" />
 
     <TextView
         android:id="@+id/txt_acc_no"
@@ -38,7 +38,7 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/img_account"
         app:layout_constraintTop_toBottomOf="@+id/txt_account_name"
-        tools:text="CURRENT BALANCE:" />
+        tools:text="БАЛАНС" />
 
     <ImageView
         android:id="@+id/img_account"

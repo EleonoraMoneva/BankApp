@@ -8,8 +8,8 @@ import android.database.sqlite.SQLiteOpenHelper;
 
 import com.example.eli.bankscorpfinancial.Model.Account;
 import com.example.eli.bankscorpfinancial.Model.Payee;
-import com.example.eli.bankscorpfinancial.Model.Profile;
 import com.example.eli.bankscorpfinancial.Model.Transaction;
+import com.example.eli.bankscorpfinancial.Profile;
 
 import java.util.ArrayList;
 

@@ -52,15 +52,15 @@ public class TransactionAdapter extends ArrayAdapter<Transaction> {
 
         txtTransactionTitle.setText(transaction.getTransactionType().toString() + " - " + transaction.getTransactionID());
         txtTransactionTimestamp.setText(transaction.getTimestamp());
-        txtTransactionAmount.setText("Amount: $" + String.format("%.2f",transaction.getAmount()));
+        txtTransactionAmount.setText("Износ: $" + String.format("%.2f",transaction.getAmount()));
 
         if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.PAYMENT) {
             imgTransactionIcon.setImageResource(R.drawable.lst_payment_icon);
-            txtTransactionInfo.setText("To Payee: " + transaction.getPayee());
+            txtTransactionInfo.setText("ДО: " + transaction.getPayee());
             txtTransactionAmount.setTextColor(Color.RED);
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.TRANSFER) {
             imgTransactionIcon.setImageResource(R.drawable.lst_transfer_icon);
-            txtTransactionInfo.setText("From: " + transaction.getSendingAccount() + " - " + "To: " + transaction.getDestinationAccount());
+            txtTransactionInfo.setText("ОД: " + transaction.getSendingAccount() + " - " + "ОД: " + transaction.getDestinationAccount());
             txtTransactionAmount.setTextColor(getContext().getResources().getColor(android.R.color.holo_blue_light));
         } else if (transaction.getTransactionType() == Transaction.TRANSACTION_TYPE.DEPOSIT) {
             imgTransactionIcon.setImageResource(R.drawable.lst_deposit_icon);

@@ -9,7 +9,7 @@ import android.widget.Button;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.eli.bankscorpfinancial.Model.Profile;
+import com.example.eli.bankscorpfinancial.Profile;
 import com.example.eli.bankscorpfinancial.Model.db.ApplicationDB;
 
 import java.util.ArrayList;

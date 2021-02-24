@@ -1,7 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="RemoteRepositoriesConfiguration">
-    
     <remote-repository>
       <option name="id" value="C:\Users\Eli\AppData\Local\Android\Sdk\extras\android\m2repository" />
       <option name="name" value="C:\Users\Eli\AppData\Local\Android\Sdk\extras\android\m2repository" />
@@ -16,6 +15,31 @@
       <option name="id" value="C:\Users\Eli\AppData\Local\Android\Sdk\extras\google\m2repository" />
       <option name="name" value="C:\Users\Eli\AppData\Local\Android\Sdk\extras\google\m2repository" />
       <option name="url" value="file:/$USER_HOME$/AppData/Local/Android/Sdk/extras/google/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="BintrayJCenter" />
+      <option name="name" value="BintrayJCenter" />
+      <option name="url" value="https://jcenter.bintray.com/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="Google" />
+      <option name="name" value="Google" />
+      <option name="url" value="https://dl.google.com/dl/android/maven2/" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\m2repository" />
+      <option name="name" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Petar%20Ilievski/AppData/Local/Android/Sdk/extras/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\google\m2repository" />
+      <option name="name" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\google\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Petar%20Ilievski/AppData/Local/Android/Sdk/extras/google/m2repository" />
+    </remote-repository>
+    <remote-repository>
+      <option name="id" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\android\m2repository" />
+      <option name="name" value="C:\Users\Petar Ilievski\AppData\Local\Android\Sdk\extras\android\m2repository" />
+      <option name="url" value="file:/$PROJECT_DIR$/../../../Petar%20Ilievski/AppData/Local/Android/Sdk/extras/android/m2repository" />
     </remote-repository>
   </component>
 </project>

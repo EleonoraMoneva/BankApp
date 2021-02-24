@@ -12,7 +12,7 @@ import android.widget.CheckBox;
 import android.widget.EditText;
 import android.widget.Toast;
 
-import com.example.eli.bankscorpfinancial.Model.Profile;
+import com.example.eli.bankscorpfinancial.Profile;
 import com.example.eli.bankscorpfinancial.Model.db.ApplicationDB;
 import com.google.gson.Gson;
 

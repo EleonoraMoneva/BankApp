@@ -19,7 +19,7 @@ import android.widget.Toast;
 
 import com.example.eli.bankscorpfinancial.Model.Account;
 import com.example.eli.bankscorpfinancial.Model.Payee;
-import com.example.eli.bankscorpfinancial.Model.Profile;
+import com.example.eli.bankscorpfinancial.Profile;
 import com.example.eli.bankscorpfinancial.Model.db.ApplicationDB;
 import com.google.gson.Gson;
 

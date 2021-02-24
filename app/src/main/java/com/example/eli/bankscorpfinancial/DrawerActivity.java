@@ -29,7 +29,7 @@ import android.widget.TextView;
 import android.widget.Toast;
 
 import com.example.eli.bankscorpfinancial.Model.Account;
-import com.example.eli.bankscorpfinancial.Model.Profile;
+import com.example.eli.bankscorpfinancial.Profile;
 import com.example.eli.bankscorpfinancial.Model.db.ApplicationDB;
 import com.google.gson.Gson;
 
@@ -90,7 +90,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         if (id == manualNavID.DASHBOARD_ID) {
             ft.replace(R.id.flContent, new DashboardFragment()).commit();
             navView.setCheckedItem(R.id.nav_dashboard);
-            setTitle("Dashboard");
+            setTitle("Почетна");
         } else if (id == manualNavID.ACCOUNTS_ID) {
             AccountOverviewFragment accountOverviewFragment = new AccountOverviewFragment();
             if (bundle != null) {
@@ -98,7 +98,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
             }
             ft.replace(R.id.flContent, accountOverviewFragment).commit();
             navView.setCheckedItem(R.id.nav_accounts);
-            setTitle("Accounts");
+            setTitle("Профили");
         }
 
         drawerLayout.closeDrawers();
@@ -325,7 +325,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
         AlertDialog.Builder builder = new AlertDialog.Builder(this);
 
         builder.setTitle("Help")
-                .setMessage("This Bank App Demo was made by Mike Banks. Soon, this dialog will give the user help, depending on where they are in the app");
+                .setMessage("bla bla bla");
 
         AlertDialog dialog = builder.create();
         dialog.show();
@@ -378,7 +378,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 if (userProfile.getAccounts().size() < 2) {
                     displayAccountAlertADialog("Transfer");
                 } else {
-                    title = "Transfer";
+                    title = "Трансфер";
                     fragmentClass = TransferFragment.class;
                 }
                 break;
@@ -386,7 +386,7 @@ public class DrawerActivity extends AppCompatActivity implements NavigationView.
                 if (userProfile.getAccounts().size() < 1) {
                     displayAccountAlertADialog("Payment");
                 } else {
-                    title = "Payment";
+                    title = "Плаќање";
                     fragmentClass = PaymentFragment.class;
                 }
                 break;

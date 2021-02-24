@@ -15,7 +15,7 @@ import android.widget.TextView;
 
 import com.example.eli.bankscorpfinancial.Adapters.TransactionAdapter;
 import com.example.eli.bankscorpfinancial.Model.Account;
-import com.example.eli.bankscorpfinancial.Model.Profile;
+import com.example.eli.bankscorpfinancial.Profile;
 import com.example.eli.bankscorpfinancial.Model.Transaction;
 import com.google.gson.Gson;
 
@@ -116,8 +116,8 @@ public class TransactionFragment extends Fragment {
         public void onItemSelected(AdapterView<?> adapterView, View view, int i, long l) {
             if (adapterView.getId() == spnAccounts.getId()) {
                 selectedAccountIndex = i;
-                txtAccountName.setText("Account: " + userProfile.getAccounts().get(selectedAccountIndex).toTransactionString());
-                txtAccountBalance.setText("Balance: $" + String.format(Locale.getDefault(), "%.2f",userProfile.getAccounts().get(selectedAccountIndex).getAccountBalance()));
+                txtAccountName.setText("Профил: " + userProfile.getAccounts().get(selectedAccountIndex).toTransactionString());
+                txtAccountBalance.setText("Баланс: $" + String.format(Locale.getDefault(), "%.2f",userProfile.getAccounts().get(selectedAccountIndex).getAccountBalance()));
             }
             else if (adapterView.getId() == spnTransactionTypeFilter.getId()) {
                 transFilter = transFilter.getTransFilter(i);
@@ -150,7 +150,7 @@ public class TransactionFragment extends Fragment {
         super.onCreate(savedInstanceState);
         Bundle bundle = this.getArguments();
 
-        getActivity().setTitle("Transactions");
+        getActivity().setTitle("Трансакции");
         selectedAccountIndex = bundle.getInt("SelectedAccount", 0);
     }
 
@@ -196,8 +196,8 @@ public class TransactionFragment extends Fragment {
         setupSpinners();
         spnAccounts.setSelection(selectedAccountIndex);
 
-        txtAccountName.setText("Account: " + userProfile.getAccounts().get(selectedAccountIndex).toTransactionString());
-        txtAccountBalance.setText("Balance: $" + String.format(Locale.getDefault(), "%.2f",userProfile.getAccounts().get(selectedAccountIndex).getAccountBalance()));
+        txtAccountName.setText("Профил: " + userProfile.getAccounts().get(selectedAccountIndex).toTransactionString());
+        txtAccountBalance.setText("Баланс: $" + String.format(Locale.getDefault(), "%.2f",userProfile.getAccounts().get(selectedAccountIndex).getAccountBalance()));
     }
 
     private void setupSpinners() {

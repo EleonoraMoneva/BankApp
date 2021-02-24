@@ -3,14 +3,16 @@ package com.example.eli.bankscorpfinancial.Adapters;
 import android.app.Activity;
 import android.content.Context;
 import android.support.annotation.NonNull;
+import android.support.v4.app.FragmentActivity;
 import android.view.LayoutInflater;
 import android.view.View;
 import android.view.ViewGroup;
 import android.widget.ArrayAdapter;
 import android.widget.TextView;
 
-import com.com.example.eli.bankscorpfinancial.Model.Account;
-import com.com.example.eli.bankscorpfinancial.R;
+import com.example.eli.bankscorpfinancial.Model.Account;
+import com.example.eli.bankscorpfinancial.R;
+import com.example.eli.bankscorpfinancial.Model.Account;
 
 import java.util.ArrayList;
 
@@ -29,6 +31,7 @@ public class AccountAdapter extends ArrayAdapter<Account> {
         this.context = context;
         this.resource = resource;
     }
+
 
     /**
      * function that gets the view from the adapter
@@ -56,7 +59,7 @@ public class AccountAdapter extends ArrayAdapter<Account> {
         txtAccountNo.setText(context.getString(R.string.account_no) + " " + account.getAccountNo());
 
         TextView txtAccountBalance = convertView.findViewById(R.id.txt_balance);
-        txtAccountBalance.setText("Account balance: $" + String.format("%.2f",account.getAccountBalance()));
+        txtAccountBalance.setText("Баланс: $" + String.format("%.2f",account.getAccountBalance()));
 
         return convertView;
     }

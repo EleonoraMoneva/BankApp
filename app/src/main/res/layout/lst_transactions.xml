@@ -55,5 +55,5 @@
         android:textStyle="bold"
         app:layout_constraintStart_toEndOf="@+id/img_transaction"
         app:layout_constraintTop_toBottomOf="@+id/txt_transaction_info"
-        tools:text="AMOUNT: $AMOUNT" />
+        tools:text="ИЗНОС: $AMOUNT" />
 </android.support.constraint.ConstraintLayout>

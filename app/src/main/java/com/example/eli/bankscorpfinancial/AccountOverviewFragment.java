@@ -20,7 +20,6 @@ import android.widget.Toast;
 
 import com.example.eli.bankscorpfinancial.Adapters.AccountAdapter;
 import com.example.eli.bankscorpfinancial.Model.Account;
-import com.example.eli.bankscorpfinancial.Model.Profile;
 import com.example.eli.bankscorpfinancial.Model.db.ApplicationDB;
 import com.google.gson.Gson;
 
@@ -40,7 +39,7 @@ public class AccountOverviewFragment extends Fragment {
     private Button btnAddAccount;
 
     private Gson gson;
-    private Profile userProfile;
+    private com.example.eli.bankscorpfinancial.Profile userProfile;
     private SharedPreferences userPreferences;
 
     private boolean displayAccountDialogOnLaunch;
@@ -93,7 +92,7 @@ public class AccountOverviewFragment extends Fragment {
         txtTitleMessage = rootView.findViewById(R.id.txt_title_msg);
         txtDetailMessage = rootView.findViewById(R.id.txt_details_msg);
 
-        getActivity().setTitle("Accounts");
+        getActivity().setTitle("Профили");
         ((DrawerActivity) getActivity()).showDrawerButton();
 
         setValues();
@@ -139,7 +138,7 @@ public class AccountOverviewFragment extends Fragment {
         userPreferences = this.getActivity().getSharedPreferences("LastProfileUsed", MODE_PRIVATE);
         gson = new Gson();
         String json = userPreferences.getString("LastProfileUsed", "");
-        userProfile = gson.fromJson(json, Profile.class);
+        userProfile = gson.fromJson(json, com.example.eli.bankscorpfinancial.Profile.class);
 
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
